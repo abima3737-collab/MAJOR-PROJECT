@@ -3,179 +3,233 @@
 <head>
 <title>Banking - High Tech Solutions</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
-
 body{
-background:#fff0f7;
-}
-
-header{
-background:white;
-padding:20px 8%;
-display:flex;
-justify-content:space-between;
-align-items:center;
-box-shadow:0 4px 15px rgba(0,0,0,0.08);
-}
-
-header h2{
-color:#ff1493;
-}
-
-header a{
-text-decoration:none;
-background:#ff1493;
-color:white;
-padding:8px 20px;
-border-radius:20px;
-transition:0.3s;
-}
-
-header a:hover{
-background:#e60073;
-}
-
-.section{
-padding:80px 8%;
+margin:0;
+font-family:'Poppins',sans-serif;
+background:#f7eef3;
 text-align:center;
 }
 
-.section h1{
-font-size:40px;
+h1,h2,h3{
 color:#ff1493;
-margin-bottom:20px;
 }
 
-.section p{
-font-size:18px;
-max-width:800px;
-margin:auto;
-margin-bottom:40px;
-}
-
-.images{
+/* IMAGE SECTION */
+.image-row{
 display:flex;
+justify-content:center;
 gap:30px;
-justify-content:center;
+margin-top:40px;
 flex-wrap:wrap;
 }
 
-.images img{
-width:320px;
+.image-box{
+width:300px;
 border-radius:20px;
-box-shadow:0 10px 30px rgba(0,0,0,0.1);
-transition:0.4s;
+overflow:hidden;
 }
 
-.images img:hover{
-transform:scale(1.05);
+.image-box img{
+width:100%;
+height:180px;
+object-fit:cover;
+transition:0.5s;
 }
 
-.features{
+.image-box:hover img{
+transform:scale(1.1);
+}
+
+/* CARDS */
+.card-row{
 display:flex;
 justify-content:center;
-gap:40px;
+gap:30px;
+margin-top:30px;
 flex-wrap:wrap;
-margin-top:50px;
 }
 
-.feature-box{
+.card{
 background:white;
-padding:30px;
-width:280px;
+padding:25px;
+width:260px;
 border-radius:20px;
 box-shadow:0 10px 25px rgba(0,0,0,0.08);
-transition:0.4s;
+transition:0.3s;
 }
 
-.feature-box:hover{
+.card:hover{
 transform:translateY(-10px);
+box-shadow:0 15px 30px rgba(255,20,147,0.3);
 }
 
-.feature-box h3{
-color:#ff1493;
-margin-bottom:15px;
-}
-
-.btn-group{
-margin-top:50px;
-}
-
+/* BUTTONS */
 .btn{
-text-decoration:none;
 background:#ff1493;
 color:white;
-padding:12px 30px;
-border-radius:30px;
-margin:10px;
+padding:12px 25px;
+border-radius:25px;
+text-decoration:none;
 display:inline-block;
+margin:10px;
 transition:0.3s;
 }
 
 .btn:hover{
-background:#e60073;
+background:#d8127f;
+transform:scale(1.05);
 }
 
+/* WHY SECTION */
+.why{
+padding:60px;
+background:white;
+margin-top:50px;
+}
+
+.why-row{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+margin-top:30px;
+}
+
+/* CONTACT */
+.contact{
+padding:60px;
+}
+
+input, textarea{
+width:80%;
+padding:12px;
+margin:10px;
+border-radius:10px;
+border:1px solid #ccc;
+}
+
+button{
+background:#ff1493;
+color:white;
+padding:12px 25px;
+border:none;
+border-radius:25px;
+}
+
+/* SMOOTH */
+html{
+scroll-behavior:smooth;
+}
 </style>
 </head>
 
 <body>
 
-<header>
-<h2>High Tech Solutions</h2>
-<a href="index.html">Back to Home</a>
-</header>
+<h2>We deliver secure, scalable, and intelligent digital banking systems</h2>
 
-<section class="section">
+<!-- IMAGES -->
+<div class="image-row">
 
-<h1>Banking & Finance Solutions</h1>
-
-<p>
-We deliver secure, scalable, and intelligent digital banking systems
-for modern financial institutions.
-</p>
-
-<div class="images">
+<div class="image-box">
 <img src="banking1.jpg">
+</div>
+
+<div class="image-box">
 <img src="banking2.jpg">
+</div>
+
+<div class="image-box">
 <img src="banking3.jpg">
 </div>
 
-<div class="features">
+</div>
 
-<div class="feature-box">
+<!-- CARDS -->
+<div class="card-row">
+
+<div class="card">
 <h3>Digital Banking</h3>
 <p>Mobile and web banking platforms with secure architecture.</p>
 </div>
 
-<div class="feature-box">
+<div class="card">
 <h3>FinTech Integration</h3>
-<p>AI-powered financial analytics and fraud detection systems.</p>
+<p>AI-powered analytics and fraud detection systems.</p>
 </div>
 
-<div class="feature-box">
+<div class="card">
 <h3>Enterprise Security</h3>
-<p>Advanced cybersecurity frameworks for financial data protection.</p>
+<p>Advanced cybersecurity frameworks for data protection.</p>
 </div>
 
 </div>
 
-<div class="btn-group">
-<a href="#" class="btn">Request Demo</a>
-<a href="#" class="btn">Download Brochure</a>
-<a href="#" class="btn">Contact Sales</a>
+<!-- BUTTONS -->
+<div style="margin-top:30px;">
+<a href="#contact" class="btn">Request Demo</a>
+<a href="brochure.pdf" class="btn">Download Brochure</a>
+<a href="mailto:yourmail@gmail.com" class="btn">Contact Sales</a>
 </div>
+
+<!-- WHY SECTION -->
+<section class="why">
+<h2>Why Choose Our Banking Solutions?</h2>
+
+<div class="why-row">
+
+<div class="card">
+<h3>Secure Systems</h3>
+<p>Bank-level encryption for maximum safety.</p>
+</div>
+
+<div class="card">
+<h3>Fast Transactions</h3>
+<p>Real-time processing with zero delay.</p>
+</div>
+
+<div class="card">
+<h3>AI Detection</h3>
+<p>Fraud prevention using smart AI.</p>
+</div>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+<h2>Contact Banking Team</h2>
+
+<form onsubmit="showMsg(event)">
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<textarea placeholder="Your Message" required></textarea>
+<br>
+<button type="submit">Send Message</button>
+</form>
+
+<p id="msg" style="color:green; display:none;">Message Sent Successfully ✅</p>
 
 </section>
+
+<script>
+function showMsg(e){
+e.preventDefault();
+document.getElementById("msg").style.display="block";
+}
+</script>
+<button onclick="history.back()" style="
+padding:10px 20px;
+background:#ff1493;
+color:white;
+border:none;
+border-radius:20px;
+cursor:pointer;
+">
+⬅ Go Back
+</button>
 
 </body>
 </html>

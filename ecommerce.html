@@ -1,114 +1,107 @@
-    <!DOCTYPE html>
-    <html>
-    <head>
-    <title>E-Commerce - High Tech Solutions</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ecommerce - High Tech Solutions</title>
 
-    <style>
-    body{
-    margin:0;
-    font-family:'Poppins',sans-serif;
-    background:#fff0f7;
-    }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
-    .header{
-    background:white;
-    padding:20px 50px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    }
+<style>
+body{margin:0;font-family:'Poppins';background:#f7eef3;text-align:center;}
+h1,h2,h3{color:#ff1493;}
 
-    .logo{
-    font-size:24px;
-    font-weight:800;
-    color:#ff1493;
-    }
+.image-row{display:flex;justify-content:center;gap:30px;margin-top:40px;flex-wrap:wrap;}
+.image-box{width:300px;border-radius:20px;overflow:hidden;}
+.image-box img{width:100%;height:180px;object-fit:cover;transition:0.5s;}
+.image-box:hover img{transform:scale(1.1);}
 
-    .hero{
-    text-align:center;
-    padding:80px 20px;
-    }
+.card-row{display:flex;justify-content:center;gap:30px;margin-top:30px;flex-wrap:wrap;}
+.card{background:white;padding:25px;width:260px;border-radius:20px;box-shadow:0 10px 25px rgba(0,0,0,0.08);transition:0.3s;}
+.card:hover{transform:translateY(-10px);box-shadow:0 15px 30px rgba(255,20,147,0.3);}
 
-    .hero h1{
-    font-size:42px;
-    color:#ff1493;
-    margin-bottom:20px;
-    }
+.btn{background:#ff1493;color:white;padding:12px 25px;border-radius:25px;text-decoration:none;display:inline-block;margin:10px;}
+.btn:hover{background:#d8127f;transform:scale(1.05);}
 
-    .hero p{
-    max-width:700px;
-    margin:auto;
-    font-size:18px;
-    }
+.why{padding:60px;background:white;margin-top:50px;}
+.why-row{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;margin-top:30px;}
 
-    .images{
-    display:flex;
-    justify-content:center;
-    gap:30px;
-    margin-top:50px;
-    flex-wrap:wrap;
-    }
+.contact{padding:60px;}
+input,textarea{width:80%;padding:12px;margin:10px;border-radius:10px;border:1px solid #ccc;}
+button{background:#ff1493;color:white;padding:12px 25px;border:none;border-radius:25px;}
 
-    .images img{
-    width:300px;
-    height:200px;
-    object-fit:cover;
-    border-radius:15px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.1);
-    transition:0.3s;
-    }
+html{scroll-behavior:smooth;}
+</style>
+</head>
 
-    .images img:hover{
-    transform:scale(1.07);
-    }
+<body>
 
-    .buttons{
-    margin-top:50px;
-    }
+<h2>We build high-performance ecommerce platforms</h2>
 
-    .buttons a{
-    display:inline-block;
-    padding:12px 25px;
-    margin:10px;
-    border-radius:30px;
-    text-decoration:none;
-    font-weight:600;
-    background:#ff1493;
-    color:white;
-    transition:0.3s;
-    }
+<div class="image-row">
+<div class="image-box"><img src="ecommerce1.jpg"></div>
+<div class="image-box"><img src="ecommerce2.jpg"></div>
+<div class="image-box"><img src="ecommerce3.jpg"></div>
+</div>
 
-    .buttons a:hover{
-    background:#d8127f;
-    }
+<div class="card-row">
+<div class="card">
+<h3>Online Stores</h3>
+<p>Modern ecommerce websites with secure checkout.</p>
+</div>
 
-    </style>
-    </head>
+<div class="card">
+<h3>Payment Integration</h3>
+<p>Multiple payment gateways integration.</p>
+</div>
 
-    <body>
+<div class="card">
+<h3>Analytics</h3>
+<p>Track user behavior and sales performance.</p>
+</div>
+</div>
 
-    <div class="header">
-    <div class="logo">HIGH TECH SOLUTIONS</div>
-    <a href="index.html" style="text-decoration:none;color:#ff1493;font-weight:600;">Back to Home</a>
-    </div>
+<div>
+<a href="#contact" class="btn">Request Demo</a>
+<a href="#" class="btn">Download Brochure</a>
+<a href="mailto:yourmail@gmail.com" class="btn">Contact Sales</a>
+</div>
 
-    <div class="hero">
-    <h1>Advanced E-Commerce Platforms</h1>
-    <p>We build scalable online stores, payment gateway integrations, and AI-driven customer experience systems for global brands.</p>
+<section class="why">
+<h2>Why Choose Ecommerce Solutions?</h2>
+<div class="why-row">
+<div class="card"><h3>Fast</h3><p>Lightning fast performance</p></div>
+<div class="card"><h3>Secure</h3><p>Safe transactions</p></div>
+<div class="card"><h3>Scalable</h3><p>Grow without limits</p></div>
+</div>
+</section>
 
-    <div class="images">
-    <img src="ecommerce1.jpg">
-    <img src="ecommerce2.jpg">
-    <img src="ecommerce3.jpg">
-    </div>
+<section class="contact" id="contact">
+<h2>Contact Ecommerce Team</h2>
+<form onsubmit="showMsg(event)">
+<input type="text" placeholder="Name" required>
+<input type="email" placeholder="Email" required>
+<textarea placeholder="Message"></textarea>
+<br>
+<button>Send</button>
+</form>
+<p id="msg" style="color:green;display:none;">Message Sent ✅</p>
+</section>
 
-    <div class="buttons">
-    <a href="contact.html">Start Your Online Store</a>
-    <a href="#">View Portfolio</a>
-    </div>
+<script>
+function showMsg(e){
+e.preventDefault();
+document.getElementById("msg").style.display="block";
+}
+</script>
+<button onclick="history.back()" style="
+padding:10px 20px;
+background:#ff1493;
+color:white;
+border:none;
+border-radius:20px;
+cursor:pointer;
+">
+⬅ Go Back
+</button>
 
-    </div>
-
-    </body>
-    </html>
+</body>
+</html>
