@@ -1,0 +1,73 @@
+/* ================= style.css ================= */
+
+body{
+    background:#fff0f7;
+}
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:white;
+    z-index:1000;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.logo img{
+    width:50px;
+}
+
+.logo span{
+    font-weight:800;
+    color:#ff1493;
+}
+
+nav a{
+    text-decoration:none;
+    background:#ff1493;
+    color:white;
+    padding:8px 15px;
+    border-radius:20px;
+    margin-left:10px;
+}
+
+nav a:hover{
+    background:#d8127f;
+}
+.hero{
+    margin-top:100px;
+    text-align:center;
+    padding:100px 20px;
+    color:white;
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('banking.jpg') center/cover;
+}
+
+section{
+    padding:60px 8%;
+    text-align:center;
+}
+
+.card{
+    background:white;
+    padding:20px;
+    margin:20px;
+    border-radius:10px;
+    display:inline-block;
+    width:250px;
+}
+
+footer{
+    background:black;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
